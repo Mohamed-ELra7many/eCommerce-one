@@ -1,0 +1,13 @@
+/*Header settings*/
+header{
+    margin-top: 20px;
+}
+header img{
+    width: 100%;
+    height: 90vh;
+}
+@media (max-width:767px) {
+    header img{
+        height: 60vh;
+    }
+}

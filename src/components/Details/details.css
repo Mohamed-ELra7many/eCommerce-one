@@ -1,0 +1,121 @@
+/*AllDetails settings*/
+.AllDetails{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80vh;
+}
+.AllDetails .detail{
+    width: 50%;
+    height: 100%;
+
+}
+@media (max-width:767px) {
+    .AllDetails .detail{
+        width: 100%;
+        height: auto;
+    
+    }
+}
+.AllDetails .detail .Details-img{
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+}
+@media (max-width:767px) {
+    .AllDetails .detail .Details-img{
+        padding-right: 0;
+    }
+}
+.AllDetails .detail .Details-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: .6s;
+}
+.AllDetails .detail .Details-img img:hover{
+    transform: translateX(20px);
+}
+.AllDetails .detail .details-name{
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #2c2c2cad;
+}
+.AllDetails .detail .details-price{
+    margin: 10px 0;
+
+}
+.AllDetails .detail .details-price .price{
+    font-size: 20px;
+    text-decoration: line-through;
+    font-style: italic;
+    font-weight: 400;
+}
+.AllDetails .detail .details-price .discount-price{
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+.AllDetails .detail .details-info{
+    display: flex;
+}
+.AllDetails .detail .details-info .Dec,
+.AllDetails .detail .details-info .quantity,
+.AllDetails .detail .details-info .Inc{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+.AllDetails .detail .details-info .quantity{
+    border-left: none;
+    border-right: none;
+    cursor: unset;
+}
+.AllDetails .detail .details-info button{
+    width: 100%;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main);
+    color: var(--white);
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+}
+.AllDetails .detail .details-info button:hover{
+    animation: left 1s ease-in-out;
+
+}
+@keyframes left {
+    0%{
+        background-color: rgb(61, 36, 36);
+    }
+    50%{
+        background-color: rgb(255, 0, 234);
+    }
+    100%{
+        background-color: rgb(255, 0, 119);
+    }
+}
+.AllDetails .detail .details-desc{
+    margin: 15px 0;
+
+}
+.AllDetails .detail .details-desc h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.AllDetails .detail .details-desc p{
+    line-height: 1.4;
+    font-size: 23px;
+}

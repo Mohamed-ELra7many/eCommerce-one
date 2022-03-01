@@ -1,0 +1,23 @@
+/*global settings*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+:root{
+  --white:#fff;
+  --black :#000;
+  --main : #ff6e68;
+}
+.container{
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
